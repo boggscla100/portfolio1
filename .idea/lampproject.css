@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: white;
+    color: #000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-left a,
+.nav-right a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.nav-left a.active,
+.nav-right a.active {
+    border-bottom: 2px solid black;
+}
+
+.nav-center {
+    font-size: 20px;
+    color: tomato;
+    font-weight: 600;
+}
+
+section {
+    width: 100%;
+}
+
+.lamp.info .grid {
+    display: flex; /* Change to flexbox */
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Adjust the spacing between the images */
+    padding: 20px; /* Add some padding around the container */
+}
+
+.lamp.info .grid .lamps {
+    width: 100%; /* Make each container take full width */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically (optional) */
+}
+
+.lamp.info .grid .lamps img {
+    display: block;
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: whitesmoke;
+}

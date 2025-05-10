@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: white;
+    color: #000;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-left a,
+.nav-right a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.nav-left a.active {
+    border-bottom: 2px solid black;
+}
+
+.nav-center {
+    font-size: 20px;
+    color: tomato;
+    font-weight: 600;
+    align-items: center;
+}
+
+.aboutme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.aboutmetext {
+    flex: 1;
+    min-width: 300px;
+}
+
+.aboutmetext h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 5px;
+    background-color: tomato;
+    z-index: -1;
+    border-radius: 2px;
+}
+
+.aboutmetext p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.about-section {
+    flex: 1;
+    text-align: right;
+    min-width: 300px;
+}
+
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+form {
+    background-color: white; /* White background for the form */
+    padding: 30px; /* Padding inside the form */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%; /* Make the form take full width of its container */
+    max-width: 600px; /* Limit the maximum width of the form for readability */
+    margin-left: 400px;
+}
+
+div {
+    margin-bottom: 50px; /* Spacing between form elements */
+}
+
+label {
+    display: block; /* Make labels take up the full width */
+    margin-bottom: 5px; /* Spacing between label and input */
+    font-weight: bold; /* Make labels stand out */
+    color: #333; /* Dark grey label text */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 12px); /* Full width minus padding and border */
+    padding: 8px; /* Padding inside the input fields */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 4px; /* Slightly rounded corners for inputs */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    font-size: 16px; /* Slightly larger font size for readability */
+}
+
+textarea {
+    min-height: 100px; /* Minimum height for the message box */
+}
+
+input[type="checkbox"] {
+    margin-right: 5px; /* Spacing between checkbox and label */
+}
+
+button[type="submit"] {
+    background-color: #f05b47; /* Orange-red submit button color */
+    color: white; /* White text on the button */
+    padding: 10px 15px; /* Padding inside the button */
+    border: none; /* Remove default button border */
+    border-radius: 25px; /* More rounded corners for the button */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+    font-size: 16px; /* Slightly larger font size for the button text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button[type="submit"]:hover {
+    background-color: #e04a36; /* Darker shade on hover */
+}
+
+.required::after {
+    content: " *"; /* Indicate required fields with an asterisk */
+    color: red; /* Make the asterisk red */
+}
+
+.name-group {
+    display: flex; /* Arrange first and last name side-by-side */
+    gap: 10px; /* Spacing between the name fields */
+}
+
+.name-group > div {
+    flex: 1; /* Make both name fields take equal width */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: whitesmoke;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .aboutme {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-section {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .aboutmetext h1 {
+        font-size: 2rem;
+    }
+
+    form{
+        flex-direction:  column;
+    }
+}
+
+
