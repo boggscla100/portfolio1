@@ -42,22 +42,22 @@ section {
 }
 
 .lamp.info .grid {
-    display: flex; /* Change to flexbox */
-    flex-direction: column; /* Stack items vertically */
-    gap: 20px; /* Adjust the spacing between the images */
-    padding: 20px; /* Add some padding around the container */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
 }
 
 .lamp.info .grid .lamps {
-    width: 100%; /* Make each container take full width */
+    width: 100%;
     display: flex;
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically (optional) */
+    justify-content: center;
+    align-items: center;
 }
 
 .lamp.info .grid .lamps img {
     display: block;
-    max-width: 100%; /* Ensure images are responsive */
+    max-width: 100%;
     height: auto;
 }
 
